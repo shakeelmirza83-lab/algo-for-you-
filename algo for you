@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algo For You - Technology Solutions</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+        }
+        header {
+            background: #0a1a44;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #14275c;
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .slider {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slide 12s infinite;
+        }
+        .slides img {
+            width: 100%;
+            object-fit: cover;
+        }
+        @keyframes slide {
+            0% {transform: translateX(0%);} 
+            33% {transform: translateX(-100%);} 
+            66% {transform: translateX(-200%);} 
+            100% {transform: translateX(0%);} 
+        }
+        .section {
+            padding: 60px 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .services, .portfolio, .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .team img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 12px 20px;
+            border: none;
+            background: #0a1a44;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #0a1a44;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Algo For You</h1>
+    <p>Smart Digital Solutions For A Smarter Future</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="slider" id="home">
+    <div class="slides">
+        <img src="https://via.placeholder.com/1500x350?text=Welcome+to+Algo+For+You" />
+        <img src="https://via.placeholder.com/1500x350?text=We+Build+Technology" />
+        <img src="https://via.placeholder.com/1500x350?text=Your+Digital+Partner" />
+    </div>
+</div>
+
+<section class="section" id="about">
+    <h2>About Us</h2>
+    <p>Algo For You delivers advanced web, app, branding, and automation solutions tailored for modern businesses.</p>
+</section>
+
+<section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="box"><h3>Web Development</h3><p>Modern & responsive websites.</p></div>
+        <div class="box"><h3>App Development</h3><p>Android / iOS mobile apps.</p></div>
+        <div class="box"><h3>Branding</h3><p>Logos, UI/UX, graphics.</p></div>
+        <div class="box"><h3>Automation</h3><p>AI-powered digital tools.</p></div>
+    </div>
+</section>
+
+<section class="section" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+        <div class="box"><img src="https://via.placeholder.com/300" style="width:100%"><p>Project 1</p></div>
+        <div class="box"><img src="https://via.placeholder.com/300" style="width:100%"><p>Project 2</p></div>
+        <div class="box"><img src="https://via.placeholder.com/300" style="width:100%"><p>Project 3</p></div>
+    </div>
+</section>
+
+<section class="section" id="team">
+    <h2>Our Team</h2>
+    <div class="team">
+        <div class="box"><img src="https://via.placeholder.com/120"><h3>Rohan</h3><p>Founder</p></div>
+        <div class="box"><img src="https://via.placeholder.com/120"><h3>Aisha</h3><p>Developer</p></div>
+        <div class="box"><img src="https://via.placeholder.com/120"><h3>Karan</h3><p>Designer</p></div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Algo For You. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
