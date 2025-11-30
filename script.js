@@ -1,0 +1,1 @@
+console.log('Brightex-style Algo For You website loaded!');
